@@ -1,0 +1,915 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main()
+{
+    system("color 70");
+    setlocale(LC_ALL, "Portuguese");
+    int a = 1, b = 1, t1 = 1, t2 = 1, t6 = 'c', t3 = 1, n = 1, nsc, pontuacao = 0, pontos = 0, ajuda = 1;
+    char p1, p2, b2, b3, b4, co, co2, b5, b6 = 's', b7;
+    printf("=======================================================================================================================\n");
+    printf("\t\t\t\t\t\t     DESCOMPLICANDO\n");
+    printf("=======================================================================================================================\n");
+    printf("\n                      :::::::                      ::::::::::::::::::::::.                               .::.\n");
+    printf("                     #@@@@@@#                     .@@@@@@@@@@@@@@@@@@@@@@@@@@!!                        .#@@@!\n");
+    printf("                    #@@@@@@@@#                    .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!                     !@@@@@!\n");
+    printf("                   .#@@@@.@@@@#                   .@@@@@!                 #@@@@@@@:                .#@@@@@@@!\n");
+    printf("                  .#@@@@  #@@@@!                  .@@@@@!                   .@@@@@#.            .:@@@@@@@@@@!\n");
+    printf("                  #@@@@!  .@@@@@!                 .@@@@@!                    .@@@@@!         :#@@@@@@#::@@@@!\n");
+    printf("                 #@@@@@    .@@@@@!                .@@@@@!                    .@@@@@!         #@@@@@:.  :@@@@!\n");
+    printf("                !@@@@@      :@@@@@:               .@@@@@!                    .@@@@@!         #@!.      :@@@@!\n");
+    printf("               !@@@@@.       !@@@@#:              .@@@@@!                   .@@@@@@!                   :@@@@!\n");
+    printf("              .#@@@@.        .#@@@@!.             .@@@@@!                 .:@@@@@@:                    :@@@@!\n");
+    printf("             .#@@@@!          .@@@@@!.            .@@@@@#::::::::::::!#@@@@@@@@@#:                     :@@@@!\n");
+    printf("             !@@@@#.           :@@@@@:            .@@@@@@@@@@@@@@@@@@@@@@@@@@@#.                       :@@@@!\n");
+    printf("            !@@@@@.             :@@@@@:           .@@@@@@@@@@@@@@@@@@@@@@:...                          :@@@@!\n");
+    printf("           :@@@@@@@@@@@@@@@@@@@@@@@@@@@:          .@@@@@!                                              :@@@@!\n");
+    printf("          :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:         .@@@@@!                                              :@@@@!\n");
+    printf("         .!@@@@#.                 .#@@@@@.        .@@@@@!                                              :@@@@!\n");
+    printf("        .!@@@@@:                   :@@@@@#.       .@@@@@!                                              :@@@@!\n");
+    printf("        :@@@@@:                     !@@@@@#.      .@@@@@!                                              :@@@@!\n");
+    printf("       :@@@@@:                       !@@@@@!      .@@@@@!                                              :@@@@!\n");
+    printf("      .@@@@@!                         !@@@@@.     .@@@@@!                                              :@@@@!\n");
+    printf("     .@@@@@#:                         :#@@@@@:    .@@@@@!                                              :@@@@!\n");
+    printf("\n\n");
+    system("pause");
+    system("cls");
+    while (b != 's' && b != 'n')
+    {
+        printf("\n\n\n\n\n\n\n\n\n\n                                        você deseja seguir o crograma de estudo?                        \n");
+        printf("\n\n\n\t\t           S para (sim)\t\t\t\t\t        N para (não)  \n\n");
+        b6 = getch();
+        fflush(stdin);
+        system("cls");
+        if (b6 != 's' && b6 != 'n')
+        {
+            system("cls");
+            printf("                                            opção Invalida! digite novamente");
+        }
+        else
+        {
+            if (b6 == 's')
+            {
+                while (b != 0)
+                {
+                    system("cls");
+                    system("color 70");
+                    printf("=======================================================================================================================\n");
+                    printf("\n\t\t\t\t\t\t  * * * * * * * *\n");
+                    printf("\t\t\t\t\t\t  *  CONTEÚDOS  *\n");
+                    printf("\t\t\t\t\t\t  * * * * * * * *\n");
+                    printf("\n=======================================================================================================================\n\n");
+                    printf("\nintrodução a programação                           |  Módulo  1  |\n");
+                    printf("Conceitos iniciais                                 |  Módulo  2  |\n");
+                    printf("Estrutura Sequencial                               |  Módulo  3  |\n");
+                    printf("Estrutura condicional                              |  Módulo  4  |\n");
+                    printf("Estrutura condicional composta e switch-case       |  Módulo  5  |\n");
+                    printf("Estrutura de Repetição                             |  Módulo  6  |\n");
+                    printf("Vetores e Matrizes                                 |  Módulo  7  |\n");
+                    printf("Mais Opções:                                       |  Módulo  8  |\n");
+
+                    printf("\n\nInforme o número módulo que você deseja acessar :  ");
+                    scanf("%d", &a);
+
+                    if (a == 1)
+                    {
+                        do
+                        {
+                            co = 's';
+                            system("color 09");
+                            do
+                            {
+                                do
+                                {
+                                    system("cls");
+                                    printf("-----------------------------------------------INTRODUÇÃO A PROGRAMAÇÃO-------------------------------------------------\n\n");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf(" digite ( 1 ) para introdução do fluxograma\n\n");
+                                    printf(" digite ( 2 ) para a introdução do Pseudocódigo(portugol)\n\n");
+                                    printf(" digite ( 3 ) para introdução da linguagem c\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                    if (n < 1 || n > 3)
+                                    {
+                                        printf("\n\n                                          Opção não encontrada, digite novamente.\n");
+                                    }
+                                    printf("\n\n em qual você deseja entrar:  ");
+                                    scanf("%d", &n);
+
+                                } while (n < 1 || n > 3);
+                                switch (n)
+                                {
+                                case 1:
+                                    system("cls");
+                                    printf("\n=======================================================================================================================\n");
+                                    printf("\t\t\t\t\t       * * * * * * * * *\n");
+                                    printf("\t\t\t\t\t       *   Fluxograma  *\n");
+                                    printf("\t\t\t\t\t       * * * * * * * * *\n");
+                                    printf("\n=======================================================================================================================\n");
+                                    printf("\n[Fluxograma]\n");
+                                    printf("\n=======================================================================================================================\n");
+                                    printf("\nFluxograma: é um tipo de diagrama, e pode ser entendido como uma representação esquemática de um processo ou algoritmo,\n");
+                                    printf("\nmuitas vezes feito através de gráficos que ilustram de forma descomplicada a transição de informações entre os elementos\n");
+                                    printf("\nque o compõem, ou seja, é a sequência operacional do desenvolvimento de um processo, o qual caracteriza: o trabalho que\n");
+                                    printf("\nestá sendo realizado, o tempo necessário para sua realização, a distância percorrida pelos documentos, quem está\n");
+                                    printf("\nrealizando o trabalho e como ele flui entre os participantes deste processo. Os fluxogramas são muito utilizados em\n");
+                                    printf("\nprojetos de software para representar a lógica interna dos programas, mas podem também ser usados para desenhar\n");
+                                    printf("\nprocessos de negócio e o workflow que envolve diversos atores corporativos no exercício de suas atribuições.[1]\n");
+                                    printf("\nO diagrama de fluxo de dados (DFD) utiliza do fluxograma para modelagem e documentação de sistemas computacionais.\n");
+                                    printf("\nO termo fluxograma designa uma representação gráfica de um determinado processo ou fluxo de trabalho,\n");
+                                    printf("\nefetuado geralmente com recurso a figuras geométricas normalizadas e as setas unindo essas figuras geométricas.\n");
+                                    printf("\nAtravés desta representaçãográfica é possível compreender de forma rápida e fácil a transição de informações\n");
+                                    printf("\nou documentos entre os elementos que participam no processo em causa. O fluxograma pode ser definido também como\n");
+                                    printf("\no gráfico em que se representa o percurso ou caminho percorrido por certo elemento\n");
+                                    printf("\n(por exemplo, um determinado documento), através dos vários departamentos da organização, bem como o tratamento\n");
+                                    printf("\nque cada um vai lhe dando. A existência de fluxogramas para cada um dos processos é fundamental para a\n");
+                                    printf("\nsimplificação e racionalização do trabalho, permitindo a compreensão e posterior otimização dos processos desenvolvidos\n");
+                                    printf("\nem cada departamento ou área da organização.\n\n");
+                                    printf("=======================================================================================================================\n");
+                                    if (pontuacao == 0)
+                                    {
+                                        pontuacao++;
+                                    }
+                                    break;
+                                case 2:
+                                    if (pontuacao > 0)
+                                    {
+                                        system("cls");
+                                        printf("\n=======================================================================================================================\n");
+                                        printf("\t\t\t\t\t       * * * * * * * * *\n");
+                                        printf("\t\t\t\t\t       *  Pseudocódigo *\n");
+                                        printf("\t\t\t\t\t       * * * * * * * * *\n");
+                                        printf("\n=======================================================================================================================\n");
+                                        printf("\n[Pseudocódigo]\n");
+                                        printf("\n=======================================================================================================================\n");
+                                        printf("\nPseudocódigo é uma forma genérica de escrever um algoritmo, utilizando uma linguagem simples\n");
+                                        printf("\n(nativa a quem o escreve, de forma a ser entendida por qualquer pessoa) sem necessidade de\n");
+                                        printf("\nconhecer a sintaxe de nenhuma linguagem de programação. Um exemplo de pseudocódigo é o Portugol,\n");
+                                        printf("\nque utiliza o compilador Visualg ou Portugol Viana que pode ser baixado do portal de software livre SourceForge.\n");
+                                        printf("\nOs livros sobre a ciência de computação utilizam frequentemente o pseudocódigo para ilustrar os seus exemplos,\n");
+                                        printf("\nde forma que todos os programadores possam entendê-los (independentemente da linguagem que utilizem).\n");
+                                        printf("\nNo caso da língua portuguesa existem alguns interpretadores de pseudocódigo, nenhum tem a projecção das\n");
+                                        printf("\nlinguagens Pascal ou BASIC, que no caso da língua inglesa se assemelham bastante a um pseudo-código.\n");
+                                        printf("=======================================================================================================================\n");
+                                    }
+                                    else
+                                    {
+                                        system("cls");
+                                        printf("\n\t\t\tvocê precisa ver introdução do fluxograma (1) antes de acessar esta parte.\n\n");
+                                    }
+                                    if (pontuacao == 1)
+                                    {
+                                        pontuacao++;
+                                    }
+                                    break;
+                                case 3:
+                                    if (pontuacao > 1)
+                                    {
+                                        system("cls");
+                                        printf("\n=======================================================================================================================\n");
+                                        printf("\t\t\t\t\t       * * * * * * * * *\n");
+                                        printf("\t\t\t\t\t       *  Linguagem C  *\n");
+                                        printf("\t\t\t\t\t       * * * * * * * * *\n");
+                                        printf("\n=======================================================================================================================\n");
+                                        printf("\n[Linguagem C]\n");
+                                        printf("\n=======================================================================================================================\n");
+                                        printf("O foco inicial da Linguagem C era o desenvolvimento de sistemas \n");
+                                        printf("\noperacionais e compiladores.Sua estrutura e seu nome provêm de uma linguagem anterior B.\n");
+                                        printf("\nFoi usada na construção de uma nova versão do \n");
+                                        printf("\nsistema operacional Unix.Quase todos os grandes sistemas operacionais \n");
+                                        printf("\nsão construídos em C/C++.No ano de 1978 foi publicado o livro: The C Programming \n");
+                                        printf("\nLanguage por Kernigham & Ritchie,tornando a linguagem conhecida.No início dos anos 80,passou a ser reconhecida \n");
+                                        printf("\ncomo uma linguagem de propósito geral.A padronização da linguagem era uma necessidade real. \n");
+                                        printf("\nA padronização foi iniciada pela ANSI ? American National Standard Institute ? em 1983 e \n");
+                                        printf("\nfinalizada em 1989.Esta linguagem precisava prover acesso de baixo nível ao hardware \n");
+                                        printf("\n(PCU, I/Os e periféricos) e se entender bem com o Assembly.\n");
+                                        printf("\nEla é linguagem procedural, modular,estruturada e multiplataforma,onde \n");
+                                        printf("\ngeralmente é compilada para o código de máquina.\n");
+                                        printf("\nA linguagem C inspirou a criação de muitas outras linguagens \n");
+                                        printf("\nde programação mais recentes, como C++, Java, C#, JavaScript, Perl, PHP. \n");
+                                        printf("=======================================================================================================================\n");
+                                    }
+                                    else
+                                    {
+                                        system("cls");
+                                        printf("\n\t\t     você precisa ver introdução do Pseudocódigo (2) antes de acessar esta parte.\n\n");
+                                    }
+                                    if (pontuacao == 2)
+                                    {
+                                        pontuacao++;
+                                    }
+                                    break;
+                                default:
+                                    break;
+                                }
+                                if (pontos == 0)
+                                {
+                                    pontos++;
+                                }
+                                printf("\n\n\t\t\t\t\t     deseja continuar nesse modulo?\n\n\t\t            S para (sim)\t\t\t\t\t N para (não)  \n\n");
+                                co = getch();
+                                system("cls");
+                            } while (co != 'n');
+
+                        } while (n != 1 && n != 2 && n != 3);
+                    }
+                    if (a == 2)
+                    {
+                        if (pontos >= 1)
+                        {
+                            b2 = '0';
+                            system("color 04");
+                            system("cls");
+                            while (b2 != 'n')
+                            {
+                                do
+                                {
+                                    system("cls");
+                                    printf("-------------------------------------------------CONCEITOS INICIAIS----------------------------------------------------\n\n");
+
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------");
+                                    printf("\n\nAlgoritmo                                1\n");
+                                    printf("\nTipos de dados em C                      2\n");
+                                    printf("\nTipos de dados em pseudocódio            3\n");
+                                    printf("\nOperadores                               4\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    if (t1 < 1 || t1 > 4)
+                                    {
+                                        printf("\n\n                                          Opção não encontrada, digite novamente.\n");
+                                    }
+                                    printf("\n\nInforme o número do conceito a ser visto ?:  ");
+                                    scanf("%d", &t1);
+                                } while (t1 < 1 || t1 > 4);
+                                system("cls");
+
+                                if (t1 == 1)
+                                {
+
+                                    printf("\n=======================================================================================================================\n");
+                                    printf("\t\t\t\t\t\t   * * * * * * * *\n");
+                                    printf("\t\t\t\t\t\t   *  Algoritmo  *\n");
+                                    printf("\t\t\t\t\t\t   * * * * * * * *\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("É um conjunto de instruções para realizar determinada tarefa.");
+                                    printf("Um exemplo claro de algoritmo é uma receita,onde há passos \nexplicados de maneira ");
+                                    printf("especifica,seguindo um conjundo de regras relacionadas a linguagem escolhida.");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+
+                                if (t1 == 3)
+                                {
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Tipos de dados no pseudocódigo]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                    printf("\nDados do tipo inteiro: \n");
+                                    printf("\nSão dados que não possuem casas decimais(1,2,3...),");
+                                    printf("podendo ser positivo,negativo e nulo.\n");
+                                    printf("\nDados do tipo real:\n");
+                                    printf("\nSão dados que possuem casas decimais(1.1,.1.2,...)");
+                                    printf("\n\nDados do tipo caracter:\n");
+                                    printf("\nSão cadeias de caracteres.");
+                                    printf("\n\nDados do tipo lógico:\n");
+                                    printf("\nBooleano,com valores relacionados a verdadeiro ou falso.");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+
+                                if (t1 == 2)
+                                {
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Tipos de dados na Linguagem C]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                    printf("\nDados do tipo 'int' : \n");
+                                    printf("\nSão dados que não possuem casas decimais(1,2,3...),");
+                                    printf("podendo ser positivo,negativo e nulo.\n");
+                                    printf("\nDados do tipo 'float' :\n");
+                                    printf("\nSão dados que possuem casas decimais(1.1,.1.2,...)");
+                                    printf("\n\nDados do tipo 'char':\n");
+                                    printf("\nSão cadeias de caracteres.");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+
+                                if (t1 == 4)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("[Operadores Arítmeticos]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nMultiplicação                (*)\n");
+                                    printf("\nDivisão                      (/)\n");
+                                    printf("\nDivisão inteira              (Barra invertida)\n");
+                                    printf("\nExponeciação                 (^)\n");
+                                    printf("\nSoma                         (+)\n");
+                                    printf("\nSubtração                    (-)\n");
+                                    printf("\nincremento em 1 unidade      (++)\n");
+                                    printf("\ndecremento em 1 unidade      (+=)\n");
+                                    printf("\nincremento genérico          (++)\n");
+                                    printf("\ndecremento genérico          (-=)\n");
+                                    printf("\natribuição com multiplicação (*=)\n");
+                                    printf("\natribuição por divisão       (/=)\n");
+                                    printf("\n=======================================================================================================================\n");
+                                }
+                                if (pontos == 1)
+                                {
+                                    pontos++;
+                                }
+                                printf("\n\n\t\t\t\t\t     deseja continuar nesse modulo?\n\n\t\t            S para (sim)\t\t\t\t\t N para (não)  \n\n");
+                                b2 = getch();
+                                system("cls");
+                            }
+                        }
+                        else
+                        {
+                            system("cls");
+                            printf("\n\n\n\n\t\t\t\t     Você precisa concluir o módulo %d primeiro!\n\n\n\n\n\n\n\n", pontos + 1);
+                        }
+                    }
+
+                    if (a == 3)
+                    {
+                        if (pontos >= 2)
+                        {
+
+                            system("color 02");
+                            system("cls");
+                            printf("\n=======================================================================================================================\n");
+                            printf("\t\t\t\t\t\t* * * * * * * * * * * * * \n");
+                            printf("\t\t\t\t\t\t* Estrutura Sequencial  *\n");
+                            printf("\t\t\t\t\t\t* * * * * * * * * * * * * \n");
+                            printf("\n=======================================================================================================================\n");
+                            printf("\nComo o próprio nome sugere, estrutura sequencial é um conjunto de intruções no qual cada instrução será \nexecutada em sequencia.\n");
+                            printf("\nÉ uma estrutura de controle básica, em que os comandos em um programa (função) \n");
+                            printf("\nsão executados um após o outro (na ordem em que são especificados).\n");
+                            printf("Primeiramente, é feita a declaração das variáveis, posteriormente, são executados os comandos de entrada\n e/ou atribuição. \n");
+                            printf("Na sequência é realizado o processamento dos dados e, no final, realiza-se a saída de dados.\n");
+                            printf("-----------------------------------------------------------------------------------------------------------------------\n\n");
+                            printf("\t\t\t\t\t\t          * * * * *       \n");
+                            printf("\t\t\t\t\t\t        *           *     \n");
+                            printf("\t\t\t\t\t\t       *   Início    *    \n");
+                            printf("\t\t\t\t\t\t        *           *     \n");
+                            printf("\t\t\t\t\t\t          * * * * *       \n");
+                            printf("\t\t\t\t\t\t             |            \n");
+                            printf("\t\t\t\t\t\t             V            \n");
+                            printf("\t\t\t\t\t\t       * * * * * * * * *  \n");
+                            printf("\t\t\t\t\t\t      *   Entrada    *    \n");
+                            printf("\t\t\t\t\t\t     *    de dados  *     \n");
+                            printf("\t\t\t\t\t\t    * * * * * * * *       \n");
+                            printf("\t\t\t\t\t\t             |            \n");
+                            printf("\t\t\t\t\t\t             V            \n");
+                            printf("\t\t\t\t\t\t     * * * * * * * * * *  \n");
+                            printf("\t\t\t\t\t\t     *  Processamento  *  \n");
+                            printf("\t\t\t\t\t\t     * * * * * * * * * *  \n");
+                            printf("\t\t\t\t\t\t             |            \n");
+                            printf("\t\t\t\t\t\t             V            \n");
+                            printf("\t\t\t\t\t\t       * * * * * * * *    \n");
+                            printf("\t\t\t\t\t\t       *  Saída de   *    \n");
+                            printf("\t\t\t\t\t\t       *   dados     *    \n");
+                            printf("\t\t\t\t\t\t       *       *  *  *    \n");
+                            printf("\t\t\t\t\t\t         * * *            \n");
+                            printf("\t\t\t\t\t\t             |            \n");
+                            printf("\t\t\t\t\t\t             V            \n");
+                            printf("\t\t\t\t\t\t          * * * * *       \n");
+                            printf("\t\t\t\t\t\t        *           *     \n");
+                            printf("\t\t\t\t\t\t       *     Fim     *    \n");
+                            printf("\t\t\t\t\t\t        *           *     \n");
+                            printf("\t\t\t\t\t\t          * * * * *       \n\n");
+                            printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                            printf("\nDe um modo geral a estrutura sequencial mais básica consiste de:\n");
+                            printf("\n-Entrada de dados\n");
+                            printf("\n-Processamento\n");
+                            printf("\n-Saída de dados\n");
+                            printf("\n=======================================================================================================================\n");
+                            printf("=======================================================================================================================\n");
+                            if (pontos == 2)
+                            {
+                                pontos++;
+                            }
+                        }
+                        else
+                        {
+                            system("cls");
+                            printf("\n\n\n\n\t\t\t\t     Você precisa concluir o módulo %d primeiro!\n\n\n\n\n\n\n\n", pontos + 1);
+                        }
+                    }
+
+                    if (a == 4)
+                    {
+                        if (pontos >= 3)
+                        {
+
+                            b4 = 's';
+                            system("color 06");
+                            system("cls");
+
+                            while (b4 != 'n')
+                            {
+                                do
+                                {
+                                    system("cls");
+                                    printf("-------------------------------------------------ESTRUTURA CONDICIONAL--------------------------------------------------\n\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nEstrutura condicional                     1\n");
+                                    printf("\nOperadores lógicos                        2\n");
+                                    printf("\nInstrução if                              3\n");
+                                    printf("\nEstrutura do if                           4\n");
+                                    printf("\nConectores na linguagem  C                5\n");
+                                    printf("\nInstrução se                              6\n");
+                                    printf("\nEstrutura do se                           7\n");
+                                    printf("\nConectores em pseudocódigo                8\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    if (t2 < 1 || t2 > 8)
+                                    {
+                                        printf("\n\n                                          Opção não encontrada, digite novamente.\n\n");
+                                    }
+                                    printf("\nInforme o número do conceito a ser visto ?   ");
+                                    scanf("%d", &t2);
+                                } while (t2 < 1 || t2 > 8);
+                                system("cls");
+
+                                if (t2 == 2)
+                                {
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Operadores lógicos]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nMaior do que                  (>)\n");
+                                    printf("\nMenor do que                  (<)\n");
+                                    printf("\nMaior ou igual                (>=)\n");
+                                    printf("\nMenor ou igual                (<=)\n");
+                                    printf("\nDiferente                     (!=)\n");
+                                    printf("\nIgual                         (==)\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                }
+
+                                if (t2 == 1)
+                                {
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Estrutura condicional]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                    printf("\nUma instrução é uma expressão seguida de ponto e vírgula.\n");
+                                    printf("\nBlocos são o agrupamento de várias intruções. \n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                }
+
+                                if (t2 == 3)
+                                {
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Instrução if]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nÉ uma estrutura de teste básica encontrada em todas as linguagens.\n");
+                                    printf("\nRealiza um conjunto de instruções caso a condição seja verdadeira.\n");
+                                    printf("\nA condição deve ficar entre parênteses.\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                }
+
+                                if (t2 == 4)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Estrutura do if]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------");
+                                    printf("\nif(condição){\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\n}\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+
+                                if (t2 == 5)
+                                {
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Conector \"e\"(&&)]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[&&]  --> (e)\n");
+                                    printf("\nExemplo:\n");
+                                    printf("\nif(a==b && b==c){\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\n}\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Conector \"ou\"(||)]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[||]  --> (ou)\n");
+                                    printf("\nExemplo:\n");
+                                    printf("\nif(a==b || b==c)\n{");
+                                    printf("\n<Bloco de condições>\n");
+                                    printf("\n}\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+
+                                if (t2 == 6)
+                                {
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Instrução se ]\n");
+                                    printf("\nSemelhante a instrução if na Linguagem C,ela executa\n");
+                                    printf("\num conjunto de instruções caso a condição seja verdadeira.\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+
+                                if (t2 == 7)
+                                {
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Estrutura do se ]\n");
+                                    printf("\nse(a>=x) entao\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\nfimse\n");
+                                    printf("\n\n Caso a condição entre parênteses seja verdadeira\n");
+                                    printf("\nas instruções serão executadas.\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (t2 == 8)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Conector 'e']\n");
+                                    printf("\nExemplo:\n");
+                                    printf("\nse(a>b e b>c) entao\n");
+                                    printf("\n<Bloco de comandos>\n");
+                                    printf("\nfimse\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Conector 'ou']\n");
+                                    printf("\nse(a>b ou b<c)entao\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\nfimse\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (pontos == 3)
+                                {
+                                    pontos++;
+                                }
+                                printf("\n\n\t\t\t\t\t     deseja continuar nesse modulo?\n\n\t\t            S para (sim)\t\t\t\t\t N para (não)  \n\n");
+                                b4 = getch();
+                                system("cls");
+                            }
+                        }
+                        else
+                        {
+                            system("cls");
+                            printf("\n\n\n\n\t\t\t\t     Você precisa concluir o módulo %d primeiro!\n\n\n\n\n\n\n\n", pontos + 1);
+                        }
+                    }
+
+                    if (a == 5)
+                    {
+                        if (pontos >= 4)
+                        {
+                            system("color 0b");
+                            system("cls");
+                            while (b5 != 'n')
+                            {
+                                do
+                                {
+                                    system("cls");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("---------------------------------------Estrutura condicional composta e switch-case------------------------------------");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n\nInstrução if-else            \t\t1\n");
+                                    printf("\nEstrutura do if-else         \t\t2\n");
+                                    printf("\nInstrução 'se-senao'         \t\t3\n");
+                                    printf("\nEstrutura do se-senao        \t\t4\n");
+                                    printf("\nSwitch-case                  \t\t5\n");
+                                    printf("\nEstrutura do Switch-case     \t\t6\n");
+                                    if (t3 < 1 || t3 > 6)
+                                    {
+                                        printf("\n\n                                          Opção não encontrada, digite novamente.\n");
+                                    }
+                                    printf("\n\n\nInforme o número do  conceito a ser visto :   ");
+                                    scanf("%d", &t3);
+                                } while (t3 < 1 || t3 > 6);
+                                system("cls");
+                                if (t3 == 1)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Instrução if-else]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nA instrução if-else permite a execução de outro bloco\n");
+                                    printf("\nde instruções,caso o resultado da condicional seja falso\n");
+                                    printf("\nDe modo geral a condicional composta executa um bloco de \n");
+                                    printf("\ncomandos quando a condicional da instrução if for falsa.\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (t3 == 2)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Estrutura do if-else]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nif(condição){\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\n}else{\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\n}\n");
+                                    printf("\nAo verificar a condicional ,o bloco de comando entre \n");
+                                    printf("\nchaves  será executado,porém,caso a condicional seja falsa,\n");
+                                    printf("\no bloco de comandos da instrução else será executada.\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (t3 == 3)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Instrução 'se-senao']\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nPermite a execução de outro bloco de istruções caso\n");
+                                    printf("\na condição do 'se' seja falsa. \n");
+                                    printf("\nDe modo geral a condicional composta é a execução de \n");
+                                    printf("\num bloco de instruções caso o a consicional seja falsa.\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (t3 == 4)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Estrutura do se-senao]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n\n\nse(condição)entao\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\nsenao\n");
+                                    printf("\n<Bloco de instruções>\n");
+                                    printf("\nfimse\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (t3 == 5)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Switch-case]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nBasicamente é uma maneira de evitar uma quantidade \n");
+                                    printf("\nexagerada de instruções if.\n");
+                                    printf("\nÉ muito utilizado em estruturas de menu.\n");
+                                    printf("\nO valor da variavel escolhida para controle da instrução\n");
+                                    printf("\né comparada com o valor da constante,caso o resultado seja verdadeiro\n");
+                                    printf("\no bloco de código relacionado ao case será executado.\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (t3 == 6)
+                                {
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n[Estrutura do Switch-case]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nswitch(){\n");
+                                    printf("\n   case 1:\n");
+                                    printf("\n    <Bloco de comandos>\n");
+                                    printf("\n   break;\n");
+                                    printf("\n   case 2:\n");
+                                    printf("\n    <Bloco de comandos>\n");
+                                    printf("\n   break,\n");
+                                    printf("\n   default:\n");
+                                    printf("\n    <Bloco de comandos>\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                }
+                                if (pontos == 4)
+                                {
+                                    pontos++;
+                                }
+                                printf("\n\n\t\t\t\t\t     deseja continuar nesse modulo?\n\n\t\t            S para (sim)\t\t\t\t\t N para (não)  \n\n");
+                                b5 = getch();
+                                system("cls");
+                            }
+                        }
+                        else
+                        {
+                            system("cls");
+                            printf("\n\n\n\n\t\t\t\t     Você precisa concluir o módulo %d primeiro!\n\n\n\n\n\n\n\n", pontos + 1);
+                        }
+                    }
+
+                    if (a == 6)
+                    {
+                        if (pontos >= 4)
+                        {
+                            for (co2 = 's'; co2 != 'n'; co2)
+                            {
+                                do
+                                {
+                                    system("color 03");
+                                    system("cls");
+                                    printf("\t\t\t\t\t      * * * * * * * * * * * * * *\n");
+                                    printf("----------------------------------------------*  Estrutura de repetição *----------------------------------------------\n");
+                                    printf("\t\t\t\t\t      * * * * * * * * * * * * * *\n");
+                                    printf("\n\n[Estrutura de repetição]\n\n");
+                                    if (t6 != 'c' && t6 != 'p')
+                                    {
+                                        printf("\n\n                                          Opção não encontrada, digite novamente.\n\n\n\n");
+                                    }
+                                    printf("digite (P) para Pseudocódigo ou (C) para Linguagem C: ");
+                                    t6 = getch();
+                                } while (t6 != 'c' && t6 != 'p');
+                                if (t6 == 'c')
+                                {
+                                    system("cls");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\t\t\t\t\t  [Estruturas de repetição LINGUAGEM C]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\nWhile(Enquanto)                          (1)\n");
+                                    printf("\nDo...While(faça...Enquanto)              (2)\n");
+                                    printf("\nFor(Para)                                (3)\n");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n\n");
+                                    printf("qual você deseja acessar?: ");
+                                    scanf("%d", &nsc);
+                                    switch (nsc)
+                                    {
+                                    case 1:
+                                        system("cls");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        printf("\n[WHILE(ENQUANTO)]\n\n");
+                                        printf("O while é a estrutura de repetição mais simples. Ele repete a execução de um bloco de sentenças enquanto uma condição \n");
+                                        printf("permanecer verdadeira. Na primeira vez que a condição se tornar falsa, o while não repetirá a execução do bloco, \n");
+                                        printf("e a execução continuará com a sentença ou comando que vem logo após o bloco do while, na seqüência do programa. \n");
+                                        printf("\n\tSINTAXE: \n\t\twhile(_condição_)\n\t\t{\n\t\t\t**Instruções**;\n\t\t}\n\n");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        break;
+                                    case 2:
+                                        system("cls");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        printf("\n[DO...WHILE(FAÇA...ENQUANTO)]\n\n");
+                                        printf("Esta estrutura tem um comportamento muito semelhante ao while, com uma diferença crucial: a condição é verificada após\n");
+                                        printf("executar o bloco de instruções correspondente. ");
+                                        printf("\n\n\tSINTAXE: \n\t\tdo\n\t\t{\n\t\t   **Instruções**;\n\t\t}\n\t\twhile(_condição_);\n\n");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        break;
+                                    case 3:
+                                        system("cls");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        printf("\n[FOR(PARA)]\n\n");
+                                        printf("O For é a estrutura de repetição que utilizamos quando sabemos a quantidade de repetições que um bloco de código deve \n");
+                                        printf("ser executado. A sintaxe é composta por três expressões separadas por ponto e vírgula. Elas controlam o início do loop \n");
+                                        printf("e as condições de como cada iteração irá executar.\n");
+                                        printf("\n\n\tSINTAXE: \n\t\tfor(valor_inicial; condição_final; valor_incremento)\n\t\t{\n\t\t **Instruções**;\n\t\t}\n\n");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        break;
+                                    default:
+                                        system("cls");
+                                        printf("\n                                                Estrutura não encontrada\n\n\n");
+                                        break;
+                                    }
+                                }
+                                if (t6 == 'p')
+                                {
+                                    system("cls");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\t\t\t\t\t[Estruturas de repetição em PSEUDOCÓDIGO]\n");
+                                    printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                    printf("\n(Enquanto)                               (1)\n");
+                                    printf("\n(faça...Enquanto)                        (2)\n");
+                                    printf("\n(Para)                                   (3)\n");
+                                    printf("\n-----------------------------------------------------------------------------------------------------------------------\n\n");
+                                    printf("qual você deseja acessar?: ");
+                                    scanf("%d", &nsc);
+                                    system("cls");
+                                    switch (nsc)
+                                    {
+                                    case 1:
+                                        printf("\n-----------------------------------------------------------------------------------------------------------------------\n\n");
+                                        printf("\n[ENQUANTO]\n\n");
+                                        printf("O Enquanto é a estrutura de repetição mais simples. Ele repete a execução de um bloco de sentenças enquanto uma condição \n");
+                                        printf("permanecer verdadeira. Na primeira vez que a condição se tornar falsa, o while não repetirá a execução do bloco, \n");
+                                        printf("e a execução continuará com a sentença ou comando que vem logo após o bloco do while, na seqüência do programa. \n");
+                                        printf("\n\tSINTAXE: \n\t\tenquanto (_condição_) faca\n\t\t***Instruções***\n\t\tfimenquanto\n");
+                                        printf("\t\tO \"fimenquanto\" é uma instrução que dara fim a estrutura de repetição ENQUANTO.");
+                                        printf("\n-----------------------------------------------------------------------------------------------------------------------\n\n");
+                                        break;
+                                    case 2:
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        printf("\n[FAÇA...ENQUANTO]\n\n");
+                                        printf("Esta estrutura tem um comportamento muito semelhante ao ENQUANTO, com uma diferença crucial: a condição é verificada após\n");
+                                        printf("executar o bloco de instruções correspondente. ");
+                                        printf("\n\tSINTAXE: \n\t\trepita \n\t\t***Instruções***\n\t\tate(_condição_de_parada_)\n");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        break;
+                                    case 3:
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        printf("\n[PARA]\n\n");
+                                        printf("O PARA é a estrutura de repetição que utilizamos quando sabemos a quantidade de repetições que um bloco de código deve \n");
+                                        printf("ser executado. A sintaxe é composta por três expressões separadas por ponto e vírgula. Elas controlam o início do loop \n");
+                                        printf("e as condições de como cada iteração irá executar.\n");
+                                        printf("\n\tSINTAXE: \n\t\tPARA **variável** DE **valor_inicial** ATE **valor_final** PASSO **incremento** FACA");
+                                        printf("\n\t\t***Instruções***\n\t\tfimpara\n");
+                                        printf("\nO [PASSO **incremento**] é opcional, esse recurso serve pera definir qual o valor do incremento da [**variável**], \n");
+                                        printf("por exemplo de 1 em 1 (padrão), de 2 em 2, de 3 em 3, etc. \n");
+                                        printf("-----------------------------------------------------------------------------------------------------------------------\n");
+                                        break;
+                                    default:
+                                        system("cls");
+                                        printf("\n                                                Estrutura não encontrada\n\n\n");
+                                        break;
+                                    }
+                                }
+                                if (pontos == 5)
+                                {
+                                    pontos++;
+                                }
+                                printf("\n\n\t\t\t\t\t     deseja continuar nesse modulo?\n\n\t\t            S para (sim)\t\t\t\t\t N para (não)  \n\n");
+                                co2 = getch();
+                                system("cls");
+                            }
+                        }
+                        else
+                        {
+                            system("cls");
+                            printf("\n\n\n\n\t\t\t\t     Você precisa concluir o módulo %d primeiro!\n\n\n\n\n\n\n\n", pontos + 1);
+                        }
+                    }
+                    if (a == 8)
+                    {
+                        b7 = 's';
+                        while (b7 != 'n')
+                        {
+                            do
+                            {
+                                system("cls");
+                                system("color 08");
+                                printf("\n\n-------------------------------------------------------MAIS OPÇÕES------------------------------------------------------");
+                                printf("\n\n\n\n\n                                      Plano de ensino                      ( 1 )");
+                                printf("\n\n                                     Instruções/ajuda                      ( 2 )");
+                                printf("\n\n                                         Créditos                          ( 3 )");
+                                printf("\n\n\n\n\n------------------------------------------------------------------------------------------------------------------------");
+                                if (ajuda < 1 || ajuda > 3)
+                                {
+                                    printf("\n                                         Opção não encontrada, Digite novamente.");
+                                }
+                                printf("\n\n\n\n\n                                                digite o número da opção: ");
+                                scanf("%d", &ajuda);
+                            } while (ajuda < 1 || ajuda > 3);
+
+                            switch (ajuda)
+                            {
+                            case 1:
+                                system("cls");
+                                printf("\n\n                                                   PLANO DE ENSINO AP1\n");
+                                printf("------------------------------------------------------------------------------------------------------------------------");
+                                printf("\n\n\nAula 1 a 4: Boas-vindas\n");
+                                printf("Aula 5 a 8: Apresentação da disciplina e introdução aos conceitos de algoritmos e programação de computadores\n");
+                                printf("Aula 9 a 12: Estruturação de algoritmos, linguagem natural, fluxograma e pseudocódigo (Dados ");
+                                printf("primitivos, atribuição,\nvariáveis simples, constantes, ES. Estrutura Sequencial em algoritmos)");
+                                printf("Aula 13 a 16: Linguagem C\n\n");
+                                printf("Aula 17 a 20: Estrutura Condicional e operadores lógicos\n");
+                                printf("Aula 21 a 24: Estrutura Condicional Composta e Escolha Caso\n");
+                                printf("Aula 25 a 28:\n");
+                                printf("Aula 29 a 32: Avaliação 1\n");
+                                printf("Aula 33 a 36: Estrutura de Repetição – Enquanto\n");
+                                printf("Aula 37 a 40: Estrutura de Repetição – Faça enquanto\n");
+                                printf("Aula 41 a 44: Estrutura de Repetição - Para\n");
+                                printf("Aula 45 a 48: Avaliação 2\n");
+                                printf("Aula 49 a 52: Vetores e strings\n");
+                                printf("Aula 53 a 56: Matrizes\n");
+                                printf("Aula 57 a 60: Projeto Final da Disciplina\n");
+                                printf("Aula 61 a 64: Encerramento do semestre e vista de notas\n");
+                                printf("------------------------------------------------------------------------------------------------------------------------");
+                                break;
+                            case 2:
+                            system("cls");
+                            system("color 08");
+                            printf("\n\n                                                     INSTRUÇÕES/AJUDA\n");
+                            printf("------------------------------------------------------------------------------------------------------------------------");
+                            printf("\n\n     COMO ULTILIZAR O PROGRAMA?:\n\n");
+                            printf("\n  -você consegue ter acesso ao programa através das teclas pré determinas depedendo da ocasião, sendo elas:\n   1,2,3,4,5,6,7,8,9,s,n,c,p,[Enter].\n");
+                            printf("\n  -Lembre-se toda vez que você precisar escolher alguma opção por meio de números, escreva o número e pressione [ENTER].\n");
+                            printf("\n  -para fechar o programa, espere a mensagem aparecer assim que você fizer qualquer interação.\n");
+                            printf("\n  -se você escolher seguir o cronograma, será preciso entrar em um módulo para conseguir liberar o outro. \n");
+                            printf("   isso não irá ocorrer caso escolha não seguir o cronograma.");
+                            printf("\n\n------------------------------------------------------------------------------------------------------------------------");
+                            printf("\n\n    QUAL O OBJETIVO DO PROGRAMA?:\n\n");
+                            printf("\n  ajudar e instruir calouros dos cursos de exatas que possuem a materia de Algoritimo e Programação 1 (AP1) e, auxiliar");    
+                            printf("\n  aprendizagem basica sobre linguagens de programação(C e Portugol) e fluxogramas\n\n");
+                            printf("------------------------------------------------------------------------------------------------------------------------");
+                            printf("\n\n    ASSUNTO DOS MÓDULOS RESUMIDO:\n\n");
+                            printf("\n  Módulo 1: introdução dos 3 formas de demonstra programação e suas origens sendo elas\n  Pseudocódigo(portugol), Fluxograma e Linguaguem C.");
+                            printf("\n\n  Módulo 2: conceitos iniciais sobre algoritmos, tipos de dados da linguagem C, tipos de dados em pseudocódico(portugol)\n");
+                            printf(" Módulo 3: conceitos");    
+                            printf("------------------------------------------------------------------------------------------------------------------------");
+                                break;
+                            case 3:
+                                system("cls");
+                                printf("\n\n                                                        CRÉDITOS:\n");
+                                printf("------------------------------------------------------------------------------------------------------------------------");
+                                printf("\n\n\n                                                  Programa feito por:");
+                                printf("\n\n                                                     Danilo Souza");
+                                printf("\n\n                                               Gustavo Santos teixeira");
+                                printf("\n\n                                           Neemias Claudio Oliveira Farias");
+                                printf("\n\n\n\n\n                               Trabalho final da diciplina Algoritimo e Programação 1.");
+                                printf("\n\n                                    Universidade federal de Jatai - GO  (UFJ) 2022");
+                                printf("\n\n------------------------------------------------------------------------------------------------------------------------\n\n");
+                                break;
+                            }
+                            printf("\n\n\t\t\t\t\t     deseja continuar nesse modulo?\n\n\t\t            S para (sim)\t\t\t\t\t N para (não)  \n\n");
+                            b7 = getch();
+                            system("cls");
+                        }
+                    }
+                    if (a > 7 || a < 1)
+                    {
+                        system("cls");
+                        printf("\n\n\n\n                                                Módulo não encontrado!!!\n\n\n\n\n");
+                    }
+                    printf("\a");
+                    printf("\n\t\t\t\t         Para fechar o programa digite ( 0 ) \n\n\t\t\t\t       para escolher outro módulo digite ( 1 )\n");
+                    scanf("%d", &b);
+                    system("cls");
+                    system("color 70");
+                }
+                printf("\n\n\n");
+                return 0;
+            }
+        }
+    }
+}
